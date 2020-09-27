@@ -1,0 +1,70 @@
+{
+  "name": "my-next-boilerplate",
+  "version": "1.0.0",
+  "description": "Next.js boilerplate",
+  "main": "n/a",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react boilerplate",
+    "next",
+    "nextjs",
+    "next boilerplate"
+  ],
+  "author": "wonism <yocee57@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonism/my-next-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wonism/my-next-boilerplate/issues"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@types/recoil": "^0.0.1",
+    "emotion": "^10.0.27",
+    "emotion-reset": "^2.0.7",
+    "next": "^9.5.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "recoil": "^0.0.13"
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "@welldone-software/why-did-you-render": "^4.3.2",
+    "babel-plugin-emotion": "^10.0.33",
+    "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-typescript": "^10.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "jest-watch-typeahead": "^0.6.1",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "4.0"
+  },
+  "license": "MIT"
+}

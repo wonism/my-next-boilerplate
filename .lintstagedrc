@@ -1,0 +1,5 @@
+"*.{ts,tsx}":
+- eslint -c .eslintrc.js --fix
+- prettier --write
+- npm t --bail --findRelatedTests
+- git add
