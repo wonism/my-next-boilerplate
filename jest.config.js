@@ -3,7 +3,7 @@ const { compilerOptions } = require('./tsconfig.json');
 
 module.exports = {
   preset: 'ts-jest',
-  rootDir: 'src',
+  roots: ['<rootDir>/src'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   testRegex: '(/__(tests|specs)__/.*|(\\.|/)(tests|spec))\\.([tj]sx?)$',
   collectCoverageFrom: [
@@ -11,10 +11,10 @@ module.exports = {
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
-  setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
+  setupFilesAfterEnv: ['./setupTests.js'],
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
+    '^.+\\.(js|jsx|ts|tsx)$': './node_modules/babel-jest',
   },
   transformIgnorePatterns: [
     '/node_modules/',
@@ -23,7 +23,7 @@ module.exports = {
   moduleDirectories: ['src'],
   moduleNameMapper: {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+    '\\.(gif|ttf|eot|svg|png)$': './test/__mocks__/fileMock.js',
     ...pathsToModuleNameMapper(compilerOptions.paths),
   },
   watchPlugins: [

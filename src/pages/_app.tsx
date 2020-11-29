@@ -1,8 +1,8 @@
 import React, { ErrorInfo } from 'react';
 import NextApp from 'next/app';
 import { RecoilRoot } from 'recoil';
-import { CacheProvider } from '@emotion/core';
-import { cache } from 'emotion';
+import { CacheProvider } from '@emotion/react';
+import { cache } from '@emotion/css';
 import whyDidYouRender from '@welldone-software/why-did-you-render';
 import { globalStyles } from '@constants/styles';
 

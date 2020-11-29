@@ -2,7 +2,7 @@ module.exports = (api) => {
   api.cache(true);
 
   const plugins = [
-    'emotion',
+    '@emotion',
     'macros',
     ['module-resolver', {
       '@components/*': './src/components',
